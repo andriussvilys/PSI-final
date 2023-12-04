@@ -1,0 +1,78 @@
+able vartotojas {
+  vartotojo_id integer [primary key]
+  vardas varchar
+  pavarde varchar
+  slaptazodis varchar
+  elPastas varchar
+  ofiso_id integer
+  aktyvumas bool
+  roles_id integer
+}
+
+Table ofisas {
+  ofiso_id integer [primary key]
+  pavadinimas varchar
+}
+
+Table aparatamentai{
+  apartamento_id integer [primary key]
+  vietu_skaicius integer
+  ofiso_id integer
+}
+
+Table kelione{
+  keliones_id integer [primary key]
+  organizatoriaus_id integer
+  keliaujanciu_darbuotoju_id [integer]
+  pradzios_data date
+  pabaigos_data date
+  pradzios_tasko_id integer
+  pabaigos_tasko_id integer
+  busenos_id integer
+}
+
+Table keliones_taskas{
+  keliones_tasko_id integer [primary key]
+  ofiso_id integer
+  adresas varchar
+}
+
+Table klasifikatorius{
+  klasifikatoriaus_id integer [primary key]
+  kodas varchar
+  pavadinimas varchar
+  klasifikatoriaus_kategorijos_id integer
+}
+
+Table klasifikatoriaus_kategorija{
+  klasifikatoriaus_kategorijos_id integer [primary key]
+  pavadinimas varchar
+}
+
+Table keliones_prasymas{
+  keliones_prasymo_id integer [primary key]
+  keliones_id integer
+  vartotojo_id integer
+  prasymo_busenos_id integer
+  komentaras varchar
+}
+
+Table kontrolinis_sarasas{
+  keliones_prasymo_id integer [primary key]
+  reikia_lektuvo_bilieto bool
+  reikia_masinos_nuomos bool
+  reikia_apgyvendimo bool
+}
+
+Table dokumentai{
+    keliones_prasymo_id integer [primary key]
+    lektuvo_bilietas blob
+    masinos_nuomos_sutartis blob
+    apgyvendinimo_vietos_id integer
+}
+
+Table apgyvendinimo_vieta{
+  apgyvendinimo_vietos_id integer [primary key]
+  apartamento_id integer
+  rezervacija blob
+}

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>Persistence</ID>
+  <OriginalElement>JavaeeElement:/c4c2e1/PSI-3/PSI-3/jpa/JPA/PersistenceModel</OriginalElement>
+  <nodes>
+    <node x="1.5" y="0.0">Ofisas#file://C:/Users/Deivis/Desktop/PSI-3/src/main/java/Ofisas.java</node>
+    <node x="-283.0" y="265.0">Vartotojas#file://C:/Users/Deivis/Desktop/PSI-3/src/main/java/Vartotojas.java</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Vartotojas#file://C:/Users/Deivis/Desktop/PSI-3/src/main/java/Vartotojas.java" target="Ofisas#file://C:/Users/Deivis/Desktop/PSI-3/src/main/java/Ofisas.java" relationship="RELATION">
+      <point x="0.0" y="-94.0" />
+      <point x="-211.0" y="103.0" />
+      <point x="72.0" y="103.0" />
+      <point x="0.0" y="39.0" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="1.0" showDependencies="false" x="72.0" y="158.0" />
+  <SelectedNodes>
+    <node>Vartotojas#file://C:/Users/Deivis/Desktop/PSI-3/src/main/java/Vartotojas.java</node>
+  </SelectedNodes>
+  <Categories>
+    <Category>Embeddables</Category>
+    <Category>Properties</Category>
+    <Category>Superclasses</Category>
+  </Categories>
+</Diagram>
+
